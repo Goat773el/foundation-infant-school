@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — Foundation Infant School</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* === BASE: Deep Navy-to-Green gradient everywhere === */
+  html, body {
+    background: linear-gradient(160deg, #0d2137 0%, #1a365d 30%, #1e4d3a 65%, #145a32 100%) !important;
+    min-height: 100vh !important;
+    color: #d4f5e2 !important;
+  }
+
+  .min-h-screen, .bg-\[\#faf5eb\] {
+    background: transparent !important;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    background: linear-gradient(90deg, #0d2137 0%, #1a365d 50%, #1e4d3a 100%) !important;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4) !important;
+    border-bottom: 2px solid rgba(104,211,145,0.3) !important;
+  }
+  nav span, nav button { color: #a8edcc !important; }
+  nav button:hover { color: #fbd38d !important; }
+  nav .bg-\[\#68d391\], nav .hover\:bg-\[\#48bb78\] {
+    background: linear-gradient(90deg, #f6ad55, #ed8936) !important;
+    color: #0d2137 !important;
+    font-weight: 800 !important;
+    box-shadow: 0 4px 15px rgba(246,173,85,0.4) !important;
+  }
+
+  /* ===== HERO ===== */
+  #home > div:first-child {
+    background: transparent !important;
+  }
+  #home {
+    background: transparent !important;
+  }
+  #home h1 {
+    color: #ffffff !important;
+    text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  }
+  #home .text-\[\#68d391\] { color: #fbd38d !important; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+  #home p.text-white\/80, #home .text-white\/80 { color: #b2f0d4 !important; }
+  #home .bg-\[\#ecc94b\] { background: rgba(246,173,85,0.2) !important; color: #fbd38d !important; border: 1px solid #f6ad55 !important; }
+  #home .bg-red-500\/20 { background: rgba(252,129,74,0.15) !important; border-color: rgba(252,129,74,0.3) !important; color: #fca97a !important; }
+  #home button {
+    background: linear-gradient(90deg, #38a169, #276749) !important;
+    color: #fff !important;
+    box-shadow: 0 8px 25px rgba(56,161,105,0.4) !important;
+  }
+  #home button.border-2 {
+    background: transparent !important;
+    border: 2px solid rgba(168,237,204,0.5) !important;
+    color: #a8edcc !important;
+    box-shadow: none !important;
+  }
+  #home button.border-2:hover { background: rgba(168,237,204,0.1) !important; }
+
+  /* ===== WHY US ===== */
+  #why-us {
+    background: transparent !important;
+  }
+  #why-us h2 { color: #ffffff !important; }
+  #why-us p.text-\[\#4a5568\] { color: #a8edcc !important; }
+  #why-us .inline-block {
+    background: rgba(104,211,145,0.2) !important;
+    color: #68d391 !important;
+    border: 1px solid rgba(104,211,145,0.4) !important;
+  }
+  #why-us .bg-white {
+    background: rgba(255,255,255,0.07) !important;
+    border: 1px solid rgba(104,211,145,0.25) !important;
+    border-top: 4px solid #68d391 !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3) !important;
+    backdrop-filter: blur(8px);
+  }
+  #why-us .bg-white:hover {
+    background: rgba(255,255,255,0.12) !important;
+    border-top-color: #f6ad55 !important;
+    transform: translateY(-6px) !important;
+  }
+  #why-us h3 { color: #ffffff !important; }
+  #why-us p.text-\[\#4a5568\].text-sm { color: #92dbb8 !important; }
+  #why-us .bg-blue-100 { background: rgba(99,179,237,0.2) !important; }
+  #why-us .bg-green-100 { background: rgba(104,211,145,0.2) !important; }
+  #why-us .bg-yellow-100 { background: rgba(246,224,94,0.2) !important; }
+  #why-us .bg-purple-100 { background: rgba(183,148,246,0.2) !important; }
+  #why-us .bg-pink-100 { background: rgba(251,182,206,0.2) !important; }
+  #why-us .text-blue-700 { color: #90cdf4 !important; }
+  #why-us .text-green-700 { color: #68d391 !important; }
+  #why-us .text-yellow-700 { color: #f6e05e !important; }
+  #why-us .text-purple-700 { color: #d6bcfa !important; }
+  #why-us .text-pink-700 { color: #fbb6ce !important; }
+
+  /* ===== PROGRAMS ===== */
+  #programs {
+    background: transparent !important;
+  }
+  #programs h2 { color: #ffffff !important; }
+  #programs > div > div > p { color: #a8edcc !important; }
+  #programs .inline-block {
+    background: rgba(104,211,145,0.2) !important;
+    color: #68d391 !important;
+    border: 1px solid rgba(104,211,145,0.3) !important;
+  }
+  #programs .bg-white {
+    background: rgba(255,255,255,0.07) !important;
+    border: 1px solid rgba(104,211,145,0.2) !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3) !important;
+    backdrop-filter: blur(8px);
+  }
+  #programs .bg-white:hover {
+    background: rgba(255,255,255,0.13) !important;
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4) !important;
+  }
+  #programs h3 { color: #ffffff !important; }
+  #programs p.text-\[\#4a5568\].text-sm { color: #92dbb8 !important; }
+  #programs .h-3 { background: linear-gradient(90deg, #f6ad55, #68d391, #63b3ed) !important; height: 5px !important; }
+  #programs .bg-\[\#1a365d\]\/10 { background: rgba(255,255,255,0.1) !important; }
+  #programs .text-\[\#1a365d\] { color: #a8edcc !important; }
+  #programs .bg-\[\#68d391\]\/20 { background: rgba(104,211,145,0.2) !important; color: #68d391 !important; }
+
+  /* ===== ABOUT SECTION ===== */
+  section.py-20.lg\:py-28.bg-\[\#1a365d\] {
+    background: rgba(0,0,0,0.25) !important;
+    border-top: 1px solid rgba(104,211,145,0.2) !important;
+    border-bottom: 1px solid rgba(104,211,145,0.2) !important;
+  }
+  section.py-20.lg\:py-28.bg-\[\#1a365d\] h2 { color: #ffffff !important; }
+  section.py-20.lg\:py-28.bg-\[\#1a365d\] p { color: #b2f0d4 !important; }
+  section.py-20.lg\:py-28.bg-\[\#1a365d\] .text-\[\#68d391\] { color: #fbd38d !important; }
+  section.py-20.lg\:py-28.bg-\[\#1a365d\] .text-white\/60 { color: #92dbb8 !important; }
+  section.py-20.lg\:py-28.bg-\[\#1a365d\] .bg-white\/10 {
+    background: rgba(255,255,255,0.07) !important;
+    border: 1px solid rgba(104,211,145,0.2) !important;
+  }
+  section.py-20.lg\:py-28.bg-\[\#1a365d\] h4 { color: #ffffff !important; }
+  section.py-20.lg\:py-28.bg-\[\#1a365d\] .inline-block {
+    background: rgba(104,211,145,0.2) !important;
+    color: #68d391 !important;
+    border: 1px solid rgba(104,211,145,0.3) !important;
+  }
+
+  /* ===== CONTACT ===== */
+  #contact { background: transparent !important; }
+  #contact h2 { color: #ffffff !important; }
+  #contact > div > div > p { color: #a8edcc !important; }
+  #contact .bg-white {
+    background: rgba(255,255,255,0.07) !important;
+    border: 1px solid rgba(104,211,145,0.2) !important;
+    border-left: 4px solid #68d391 !important;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.25) !important;
+    backdrop-filter: blur(8px);
+  }
+  #contact h4 { color: #ffffff !important; }
+  #contact .text-\[\#4a5568\] { color: #a8edcc !important; }
+  #contact .text-\[\#1a365d\] { color: #68d391 !important; }
+  #contact label { color: #b2f0d4 !important; }
+  #contact input, #contact textarea {
+    background: rgba(255,255,255,0.08) !important;
+    border: 1px solid rgba(104,211,145,0.3) !important;
+    color: #ffffff !important;
+  }
+  #contact input::placeholder, #contact textarea::placeholder { color: rgba(168,237,204,0.5) !important; }
+  #contact input:focus, #contact textarea:focus {
+    border-color: #68d391 !important;
+    box-shadow: 0 0 0 3px rgba(104,211,145,0.2) !important;
+  }
+  #contact button[type=submit] {
+    background: linear-gradient(90deg, #38a169, #276749) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+  }
+  #contact .bg-gradient-to-br {
+    background: rgba(0,0,0,0.3) !important;
+    border: 1px solid rgba(104,211,145,0.3) !important;
+  }
+  #contact .inline-flex.bg-\[\#ecc94b\] {
+    background: linear-gradient(90deg,#f6ad55,#ed8936) !important;
+    color: #0d2137 !important;
+  }
+  #contact .inline-block {
+    background: rgba(104,211,145,0.15) !important;
+    color: #68d391 !important;
+    border: 1px solid rgba(104,211,145,0.3) !important;
+  }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: linear-gradient(90deg, #0a1a2e 0%, #0d2137 60%, #0f2d1e 100%) !important;
+    border-top: 2px solid rgba(104,211,145,0.3) !important;
+  }
+  footer h5 { color: #ffffff !important; }
+  footer p, footer li { color: #92dbb8 !important; }
+  footer button { color: #92dbb8 !important; }
+  footer button:hover { color: #fbd38d !important; }
+  footer .text-white\/40 { color: rgba(168,237,204,0.4) !important; }
+  footer .border-white\/10 { border-color: rgba(104,211,145,0.15) !important; }
+  footer .bg-\[\#68d391\] { background: linear-gradient(90deg,#68d391,#4fd1c5) !important; }
+  footer span.font-bold { color: #ffffff !important; }
+  footer .text-white\/60 { color: #92dbb8 !important; }
+
+  /* ===== SECTION BADGES ===== */
+
+  /* Navbar: Home, Programs, Why Us, Contact buttons = #0f1121 */
+  nav .hidden.md\:flex button.text-\[\#4a5568\] {
+    color: #0f1121 !important;
+    font-weight: 700 !important;
+  }
+  nav .hidden.md\:flex button.text-\[\#4a5568\]:hover {
+    color: #fbd38d !important;
+  }
+
+  /* Contact section h4 headers: Phone Numbers, Address, School Hours = #57c07e */
+  #contact .bg-white h4.font-semibold {
+    color: #57c07e !important;
+  }
+  span.inline-block {
+    letter-spacing: 0.5px;
+  }
+</style>
+<style>
+  html,body{margin:0;padding:0;}
+  a{text-decoration:none;}
+  .page-content{padding-top:80px;}
+</style>
+</head>
+<body>
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <a href="index.html" style="display:flex;align-items:center;gap:8px;text-decoration:none;">
+        <div class="w-10 h-10 rounded-full bg-[#1a365d] flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+        </div>
+        <span style="font-weight:600;font-size:1.1rem;color:#fff;" class="hidden sm:block">Foundation Infant School</span>
+      </a>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="index.html" style="background:#0f1121;color:#fff;padding:6px 14px;border-radius:8px;text-decoration:none;font-weight:500;">Home</a>
+        <a href="programs.html" style="background:#0f1121;color:#fff;padding:6px 14px;border-radius:8px;text-decoration:none;font-weight:500;">Programs</a>
+        <a href="why-us.html" style="background:#0f1121;color:#fff;padding:6px 14px;border-radius:8px;text-decoration:none;font-weight:500;">Why Us</a>
+        <a href="boarding.html" style="background:#0f1121;color:#fff;padding:6px 14px;border-radius:8px;text-decoration:none;font-weight:500;">Boarding</a>
+        <a href="contact.html" style="background:#0f1121;color:#fff;padding:6px 14px;border-radius:8px;text-decoration:none;font-weight:500;">Contact</a>
+        <a href="enroll.html" style="background:linear-gradient(90deg,#f6ad55,#ed8936);color:#0d2137;font-weight:800;padding:8px 18px;border-radius:10px;text-decoration:none;box-shadow:0 4px 15px rgba(246,173,85,0.4);">Enroll Now</a>
+      </div>
+      <!-- Mobile menu button -->
+      <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" style="background:#0f1121;color:#fff;border-radius:8px;padding:8px 10px;border:none;cursor:pointer;" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4" style="border-top:1px solid rgba(104,211,145,0.2);margin-top:8px;">
+      <div style="display:flex;flex-direction:column;gap:8px;padding-top:12px;">
+        <a href="index.html" style="background:#0f1121;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:500;">Home</a>
+        <a href="programs.html" style="background:#0f1121;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:500;">Programs</a>
+        <a href="why-us.html" style="background:#0f1121;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:500;">Why Us</a>
+        <a href="boarding.html" style="background:#0f1121;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:500;">Boarding</a>
+        <a href="contact.html" style="background:#0f1121;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:500;">Contact</a>
+        <a href="enroll.html" style="background:linear-gradient(90deg,#f6ad55,#ed8936);color:#0d2137;font-weight:800;padding:10px 16px;border-radius:8px;text-decoration:none;">Enroll Now</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="page-content">
+
+<div style="padding:40px 0 0 0;text-align:center;">
+  <span style="display:inline-block;background:rgba(104,211,145,0.2);color:#68d391;border:1px solid rgba(104,211,145,0.4);padding:6px 20px;border-radius:999px;font-size:0.85rem;font-weight:600;letter-spacing:1px;margin-bottom:16px;">Get In Touch</span>
+  <h1 style="color:#fff;font-size:2.4rem;font-weight:800;margin-bottom:12px;">Contact Us Today</h1>
+  <p style="color:#a8edcc;font-size:1.1rem;max-width:600px;margin:0 auto;">We would love to hear from you. Reach out for admissions, boarding or general enquiries.</p>
+</div>
+<section id="contact" class="py-20 lg:py-28"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="text-center mb-16"><span class="inline-block bg-[#ecc94b] text-[#1a365d] px-4 py-1 rounded-full text-sm font-medium mb-4">Get In Touch</span><h2 class="text-3xl sm:text-4xl font-bold text-[#1a365d] mb-4">Contact Us Today</h2><p class="text-[#4a5568] text-lg max-w-2xl mx-auto">Ready to give your child the best start? Reach out to us for enrollment inquiries or to schedule a visit.</p></div><div class="grid lg:grid-cols-2 gap-12"><div class="space-y-6"><div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100"><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-[#1a365d]/10 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-6 h-6 text-[#1a365d]"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div><div><h4 class="font-semibold text-[#1a365d] mb-2" style="color:#57c07e!important">Phone Numbers</h4><p class="text-[#4a5568]">0774-047-163</p><p class="text-[#4a5568]">0719-047-163</p></div></div></div><div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100"><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-[#68d391]/10 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-6 h-6 text-[#68d391]"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></div><div><h4 class="font-semibold text-[#1a365d] mb-2" style="color:#57c07e!important">Address</h4><p class="text-[#4a5568]">5372 Cherutombo Extension</p><p class="text-[#4a5568]">After Feruka Rd</p></div></div></div><div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100"><div class="flex items-start gap-4"><div class="w-12 h-12 rounded-xl bg-[#ecc94b]/20 flex items-center justify-center flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-6 h-6 text-[#d69e2e]"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div><div><h4 class="font-semibold text-[#1a365d] mb-2" style="color:#57c07e!important">School Hours</h4><p class="text-[#4a5568]">Monday - Friday</p><p class="text-[#4a5568]">7:00 AM - 5:00 PM</p></div></div></div><div class="bg-gradient-to-br from-[#1a365d] to-[#2c5282] rounded-2xl p-6 text-white"><h4 class="font-bold text-xl mb-2">Enrollment Open!</h4><p class="text-white/80 mb-4">Limited places available for the upcoming academic year. Don't miss this opportunity!</p><div class="inline-flex items-center gap-2 bg-[#ecc94b] text-[#1a365d] px-4 py-2 rounded-lg text-sm font-semibold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star w-4 h-4"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>HURRY - LIMITED PLACES</div></div></div><div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100"><h4 class="font-bold text-[#1a365d] text-xl mb-6">Send Us a Message</h4><form class="space-y-4"><div><label for="name" class="block text-sm font-medium text-[#4a5568] mb-2">Your Name</label><input type="text" id="name" required="" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1a365d] focus:ring-2 focus:ring-[#1a365d]/20 outline-none transition-all" placeholder="Enter your full name" value=""></div><div><label for="phone" class="block text-sm font-medium text-[#4a5568] mb-2">Phone Number</label><input type="tel" id="phone" required="" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1a365d] focus:ring-2 focus:ring-[#1a365d]/20 outline-none transition-all" placeholder="Enter your phone number" value=""></div><div><label for="message" class="block text-sm font-medium text-[#4a5568] mb-2">Message</label><textarea id="message" required="" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-[#1a365d] focus:ring-2 focus:ring-[#1a365d]/20 outline-none transition-all resize-none" placeholder="Tell us about your child and your enrollment inquiry..."></textarea></div><button type="submit" class="w-full bg-[#68d391] hover:bg-[#48bb78] text-[#1a365d] font-bold py-4 rounded-lg transition-all hover:scale-[1.02] flex items-center justify-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send w-5 h-5"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg>Send Message</button></form></div></div></div></section>
+
+<footer class="bg-[#1a365d] py-12"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="grid md:grid-cols-3 gap-8 mb-8"><div><div class="flex items-center gap-2 mb-4"><div class="w-10 h-10 rounded-full bg-[#68d391] flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap w-6 h-6 text-[#1a365d]"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg></div><span class="font-bold text-white text-lg">Foundation Infant School</span></div><p class="text-white/60 text-sm">Developing the whole child (S.P.I.C.E) — Socially, Physically, Intellectually, Cognitively and Emotionally — through heritage-based education and Ubuntu values.</p></div><div><h5 class="font-semibold text-white mb-4">Quick Links</h5><ul class="space-y-2"><li><button class="text-white/60 hover:text-[#68d391] transition-colors text-sm">Home</button></li><li><button class="text-white/60 hover:text-[#68d391] transition-colors text-sm">Programs</button></li><li><button class="text-white/60 hover:text-[#68d391] transition-colors text-sm">Why Us</button></li><li><button class="text-white/60 hover:text-[#68d391] transition-colors text-sm">Contact</button></li></ul></div><div><h5 class="font-semibold text-white mb-4">Contact Info</h5><ul class="space-y-2 text-white/60 text-sm"><li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone w-4 h-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>0774-047-163 | 0719-047-163</li><li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>5372 Cherutombo Extension, After Feruka Road and Tashinga B</li></ul></div></div><div class="border-t border-white/10 pt-8 text-center"><p class="text-white/40 text-sm">2026<!-- --> Foundation Infant School. All rights reserved.</p></div></div></footer>
+</div>
+</body>
+</html>
